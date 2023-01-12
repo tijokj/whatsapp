@@ -1,0 +1,26 @@
+// FIle watcher
+
+npm i nodemon
+or install it globally
+npm install -g nodemon
+
+https://stackoverflow.com/questions/23927195/nodemon-not-working-properly
+
+npm i whatsapp-web.js
+npm i qrcode-terminal
+
+Run :- nodemon index.js
+every time we should not scan the last scanned session
+
+npx nodemon index.js
+
+nodemon index.js --ignore *.json
+
+npm i github:pedroslopez/whatsapp-web.js#fix-buttons-list
+npm i git+https://github.com/pedroslopez/whatsapp-web.js#fix-buttons-list
+
+npm i express mongoose nodemon dotenv
+mongodb://localhost/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+
+Working Youtube Videos and sample
+https://github.com/ngekoding/whatsapp-api-tutorial
