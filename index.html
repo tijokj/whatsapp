@@ -162,19 +162,23 @@
 			});
 
 			socket.on('message', function(data) {
+				console.log(data);
 				$(`.client.client-${data.id} .logs`).prepend($('<li>').text(data.text));
 			});
 
 			socket.on('qr', function(data) {
+				console.log(data);
 				$(`.client.client-${data.id} #qrcode`).attr('src', data.src);
 				$(`.client.client-${data.id} #qrcode`).show();
 			});
 
 			socket.on('ready', function(data) {
+				console.log(data);
 				$(`.client.client-${data.id} #qrcode`).hide();
 			});
 
 			socket.on('authenticated', function(data) {
+				console.log(data);
 				$(`.client.client-${data.id} #qrcode`).hide();
 			});
 		});
