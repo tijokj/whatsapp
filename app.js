@@ -110,6 +110,12 @@ const createSession = function(id, description) {
     io.emit('authenticated', { id: id });
     io.emit('message', { id: id, text: 'Whatsapp is authenticated!' });
   });
+  
+  client.on('message', msg => {
+	if (msg.body == '!ping') {
+		msg.reply('pong');
+	}
+  });
 
   client.on('auth_failure', function() {
     io.emit('message', { id: id, text: 'Auth failure, restarting...' });
